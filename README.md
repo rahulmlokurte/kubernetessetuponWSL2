@@ -46,6 +46,12 @@ Install minikube and run with podman driver using below command
 minikube start --driver=podman --container-runtime=cri-o --extra-config=kubelet.cgroup-driver=systemd
 ```
 
+If you are unable to start, you can delete all the cluster using below command and restart the service
+
+```sh
+minikube delete --all
+```
+
 If you are behind the corporate networks, you need to install the Root Certificate into the minikube cluster using this [link](https://minikube.sigs.k8s.io/docs/handbook/untrusted_certs/)
 
 ## Install kubectl
